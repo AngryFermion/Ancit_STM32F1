@@ -50,7 +50,7 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN PFP */
 
-void testing_issues(void);
+int testing_issues(void);
 
 /* USER CODE END PFP */
 
