@@ -50,7 +50,7 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN PFP */
 
-int testing_issues(void);
+void testing_issues(void);
 
 /* USER CODE END PFP */
 
@@ -193,7 +193,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 
-int testing_issues(){
+void testing_issues(){
 	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
 
     HAL_Delay(50);
@@ -202,7 +202,7 @@ int testing_issues(){
 
     HAL_Delay(50);
 
-    return 0; // The issue here is that in the function declaration, the function type is a void. 
+     // The issue here is that in the function declaration, the function type is a void. 
 
 }
 
